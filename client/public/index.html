@@ -4,11 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>paint.exe</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Example</h1>
-  <script type="text/javascript" src="bundle.js"></script>
+  <div style="display:flex; justify-content: space-between;">
+    <div>
+      <div style="display:flex; justify-content: space-between">
+        <h1 class="terminal">paint.exe</h1>
+        <h2 id="coords"></h2>
+      </div>
+      <canvas>
+      </canvas>
+      <div style="display:flex; justify-content: space-between;">
+        <div id="buttons" style="margin:15px">
+          <button>Save</button>
+          <button>Load</button>
+          <button>Import</button>
+          <button>Export</button>
+        </div>
+        <div id="notifications" style="margin:15px">
+          This is where notifications go
+        </div>
+      </div>
+    </div>
+    <div id="pallette">
+      <div id="active" class="swatch" style="background:#FFFFFF">
+        <span class="darkText">White</span>
+      </div>
+      <div id="choosable">
+        <div class="swatch" style="background:#FFFFFF">
+            <span class="darkText">White</span>
+        </div>
+        <div class="swatch" style="background:#000000">
+            <span class="lightText">Black</span>
+        </div>
+        <div class="swatch" style="background:#3333DD">
+            <span class="lightText">Blue</span>
+        </div>
+        <div class="eraser">
+            <span class="lightText">Eraser</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/bundle.js"></script>
 </body>
 </html>
